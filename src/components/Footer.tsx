@@ -58,7 +58,7 @@ export default function Footer() {
   const isSeleted = (path: string) => `/${currentPath}` === path;
 
   return (
-    <div className="w-full h-[56px] fixed bottom-0 bg-white flex justify-around">
+    <div className="w-full h-[56px] fixed bottom-0 bg-white flex justify-around border-t border-t-gray-200">
       {FooterRouter.map(({ href, name, icon }) => (
         <FooterMenu
           key={href}
